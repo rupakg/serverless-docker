@@ -40,4 +40,4 @@ docker run -it --name svrless \
            --env-file ~/.aws/credentials \
            rupakg/serverless-docker /bin/bash
 ```
-
+Then, run ```aws configure``` and pass in the AWS credentials.
