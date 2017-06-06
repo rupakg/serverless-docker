@@ -9,5 +9,8 @@ RUN npm install -g serverless@1.14.0 && \
 RUN python get-pip.py 
 RUN pip install awscli
 
+# install other npm packages
+npm install --global surge
+
 WORKDIR /home/svrless
 CMD ["sls", "--help"]
