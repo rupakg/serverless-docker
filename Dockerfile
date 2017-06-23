@@ -9,9 +9,11 @@ RUN npm install -g serverless@1.16.0 && \
 RUN python get-pip.py 
 RUN pip install awscli
 
-# install dev tools
+# install dev tools 
+# libsecret-1-dev needed by keytar for azure
 RUN apt-get install tree -y && \
     apt-get install nano -y && \
+    apt-get install libsecret-1-dev -y && \
     apt-get clean
 
 # install other npm packages
