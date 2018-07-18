@@ -12,7 +12,7 @@ docker build -t rupakg/serverless-docker .
 
 ```
 # run the image to get a shell
-docker run -it --name svrless -v ~/projects/svrless:/home/svrless rupakg/serverless-docker /bin/bash
+docker run -it --name svrless -v ~/projects/svrless:/home/svrless -p 8000:8000 rupakg/serverless-docker /bin/bash
 ```
 
 ```
